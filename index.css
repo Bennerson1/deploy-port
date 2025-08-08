@@ -1,0 +1,246 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0a0a0a;
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff4e9b;
+}
+
+h3 {
+  color: #ffae00;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* Botão padrão */
+.btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #ff4e9b, #ffae00);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff4e9b;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff4e9b;
+  box-shadow: 0 0 25px rgba(255, 78, 155, 0.7);
+  transition: transform 0.3s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.04);
+}
+
+.hero-text h1 {
+  font-size: 2.8em;
+  color: #ffae00;
+}
+
+.hero-text p {
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+/* SOBRE */
+.sobre p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+/* SERVIÇOS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px #000;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff4e9b88;
+}
+
+.card i {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffae00;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+/* PORTFÓLIO */
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.projeto {
+  width: 300px;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.02);
+}
+
+.projeto img {
+  width: 100%;
+  display: block;
+}
+
+.projeto h3 {
+  padding: 10px;
+  font-size: 1.1em;
+  box-shadow: black;
+}
+
+/* CONTATO */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #ff4e9b;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff267b;
+}
+
+/* RODAPÉ */
+footer {
+  background: #0d0d0d;
+  padding: 30px 20px;
+  text-align: center;
+  color: #999;
+}
+
+.socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4em;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff4e9b;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cards,
+  .projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+}
